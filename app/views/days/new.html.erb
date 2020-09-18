@@ -1,0 +1,16 @@
+<h1>New Day Form</h1>
+<%= form_for @day do |f| %>
+    <%= f.label :name, "Day: " %>
+    <%= f.text_field :name%>
+    <br>
+    <br>
+    <%= f.label :notes, "Notes: " %>
+    <%= f.text_field :notes%>
+    <br>
+    <br>
+    <%= f.label :date, "Date: " %>
+    <%= f.text_field :date%>
+    <br>
+    <br>
+    <%= f.submit "Create New Day" %>
+<%end%>

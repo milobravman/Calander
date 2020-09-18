@@ -1,0 +1,10 @@
+<h1>Days</h1>
+<div>
+    <img src="https://d3tvpxjako9ywy.cloudfront.net/blog/content/uploads/2017/05/rawpixel-633847-unsplash-1302x914.jpg?av=ebd3ac603a2f60d6cbc4a6428fc6f995rl" alt="image">
+</div>
+<ul>
+    <% @days.each do |day| %>
+        <li><%= link_to day.name.titleize, day_path(day) %> </li>   
+    <%end%>
+</ul><br>
+    <br>
